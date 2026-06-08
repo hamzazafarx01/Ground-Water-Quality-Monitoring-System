@@ -1,10 +1,7 @@
- README FILE — WATER QUALITY MONITORING SYSTEM
+ README FILE — REAL TIME WATER MONITORING SYSTEM
  Project Title
 
-WaterX Labs — Smart Water Quality Monitoring System
-
 Objective
-
 - To design a real-time water quality monitoring system using IoT that measures:
 
 Turbidity (NTU)
@@ -21,6 +18,7 @@ and sends live updates via Telegram + LCD + Web Dashboard.
 - GPS Tracking
 - Cloud Messaging (Telegram API)
 - NTP Time Sync
+- 
 🧩 Components Used
 - ESP32 Dev Board
 - Turbidity Sensor Module
@@ -30,8 +28,10 @@ and sends live updates via Telegram + LCD + Web Dashboard.
 - 20x4 I2C LCD
 - Buzzer
 - Breadboard + Jumper Wires
+  
 🔌 CIRCUIT CONNECTIONS (IMPORTANT)
 - 📍 ESP32 Pin Mapping
+- 
 - Component	Pin	ESP32 Connection
 - Turbidity Sensor	AO	GPIO 34
 - TDS Sensor	AO	GPIO 35
@@ -47,7 +47,8 @@ and sends live updates via Telegram + LCD + Web Dashboard.
 - LCD VCC	5V	
 - LCD GND	GND	
 - Buzzer +	GPIO 25	
-- Buzzer -	GND	
+- Buzzer -	GND
+- 
 🧠 BLOCK DIAGRAM (LOGICAL FLOW)
         +----------------------+
         |   Turbidity Sensor   |
@@ -87,6 +88,7 @@ and sends live updates via Telegram + LCD + Web Dashboard.
           +------------------+
           |     GPS Module   |
           +------------------+
+  
 🔬 WORKING PRINCIPLE
 - 1st: Sensors collect real-time water parameters
 - 2nd: ESP32 reads analog values and converts to:
@@ -100,6 +102,7 @@ LCD (local)
 Telegram (remote)
 Web Dashboard (browser)
 Buzzer activates when water quality is poor
+
 📊 PARAMETER CLASSIFICATION
 Parameter	Range	Status
 NTU	0–5	Drinkable
@@ -120,19 +123,21 @@ Buzzer alert for unsafe water
 Web dashboard visualization
 12-hour format time display
 City-based identification
+
 🚀 FUTURE IMPROVEMENTS
 AI-based prediction (pollution trends)
 Cloud database logging
 Mobile app integration
 Solar-powered system
 Multi-location monitoring network
+
 ⚠️ LIMITATIONS
 Sensor calibration required
 Accuracy depends on environment
 GPS accuracy affected indoors
 Analog noise may affect readings
-🎤 CONCLUSION
 
+🎤 CONCLUSION
 This system provides a scalable and low-cost IoT solution for water quality monitoring, useful in:
 
 Smart cities
