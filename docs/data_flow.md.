@@ -1,0 +1,12 @@
+# Data Flow
+
+```txt
+Water Quality Sensors
+(TDS, Turbidity, Temperature, Water Level)
+        ↓
+      ESP32
+        ↓
+ ┌──────┼────────────┐
+ LCD   Buzzer   Wi-Fi / Cloud
+        ↓
+ Dashboard / Telegram Alert
